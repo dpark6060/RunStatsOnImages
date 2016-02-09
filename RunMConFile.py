@@ -26,8 +26,21 @@ def main(WrkFile):
     if not os.path.exists(output):
         cmd='cd {};mcflirt -in {} -out {}_MC'.format(base,fileBase,fileBase)
         print cmd
+        mcSH=os.path.join(base,'MCsh.sh')
+        fl=open(mcSH,'w')
+        fl.write(cmd)
+        fl.close()
+        cmd='qsub -q big.q {}'.format(mcSH)   
+        print cmd
+        
         pr = sp.Popen(cmd,shell=True)
         pr.wait()
+        
+        cmd='rm {}'.format(mcSH)   
+        print cmd        
+        pr = sp.Popen(cmd,shell=True)
+        pr.wait()
+                
     
     return output
 
