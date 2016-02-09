@@ -134,7 +134,7 @@ def RunOnFile(InputNii,WrkDir,TxtOutput,Fs,Int,Fnew):
 				shFile.write('# (4) Job:\n')
 				shFile.write('source ~/.bashrc\n')
 				shFile.write('source /usr/local/UniversalPathSetup.sh\n')
-				shFile.write('cd /home/dbp2123/dparker/Code/Python/GenericCode/RunStatsOnImg\n')
+				shFile.write('cd /share/studies/David_FS/Code/Python/RunStatsOnImages\n')
 				#shFile.write('python ClusterFilterShiftTxt.py {} {} {} {} {}\n'.format(TxtName,SliceShift[z],Fs,shPath,Fnew))
 				shFile.write('python ClusterFilterShiftTxt.py {} {} {} {} {}\n'.format(TxtName,SliceShift[z],Fs,shPath,Fnew))
 
@@ -183,7 +183,7 @@ def RunOnFile(InputNii,WrkDir,TxtOutput,Fs,Int,Fnew):
 					shFile.write('# (4) Job:\n')
 					shFile.write('source ~/.bashrc\n')
 					shFile.write('source /usr/local/UniversalPathSetup.sh\n')
-					shFile.write('cd /home/dbp2123/dparker/Code/Python/GenericCode/RunStatsOnImg\n')
+					shFile.write('cd /share/studies/David_FS/Code/Python/RunStatsOnImages\n')
 					#shFile.write('python ClusterFilterShiftTxt.py {} {} {} {} {}\n'.format(TxtName,SliceShift[z],Fs,shPath,Fnew))
 					shFile.write('python ClusterFilterShiftTxt.py {} {} {} {} {}\n'.format(TxtName,SliceShift[z],Fs,shPath,Fnew))
 
