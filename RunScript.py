@@ -10,7 +10,8 @@ import ExtractBold as EXB
 import RunFullPipelineOnFile as Pipe
 import re
 
-# Testing the Update
+# Testing the Update 
+#Testing Version 2 Update
 def RunCoreOnFile(InputNii,Output,fs,Timeseries=''):
     print Output
     if not os.path.exists(Output):
